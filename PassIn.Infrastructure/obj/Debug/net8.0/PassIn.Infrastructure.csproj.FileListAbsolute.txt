@@ -1,0 +1,12 @@
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Infrastructure/bin/Debug/net8.0/PassIn.Infrastructure.deps.json
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Infrastructure/bin/Debug/net8.0/PassIn.Infrastructure.dll
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Infrastructure/bin/Debug/net8.0/PassIn.Infrastructure.pdb
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.AssemblyInfoInputs.cache
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.AssemblyInfo.cs
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.csproj.CoreCompileInputs.cache
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.sourcelink.json
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.dll
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Infrastructure/obj/Debug/net8.0/refint/PassIn.Infrastructure.dll
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Infrastructure/obj/Debug/net8.0/PassIn.Infrastructure.pdb
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Infrastructure/obj/Debug/net8.0/ref/PassIn.Infrastructure.dll

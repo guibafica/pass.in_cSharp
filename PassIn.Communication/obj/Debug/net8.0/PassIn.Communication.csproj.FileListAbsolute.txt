@@ -1,0 +1,12 @@
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Communication/bin/Debug/net8.0/PassIn.Communication.deps.json
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Communication/bin/Debug/net8.0/PassIn.Communication.dll
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Communication/bin/Debug/net8.0/PassIn.Communication.pdb
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Communication/obj/Debug/net8.0/PassIn.Communication.GeneratedMSBuildEditorConfig.editorconfig
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Communication/obj/Debug/net8.0/PassIn.Communication.AssemblyInfoInputs.cache
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Communication/obj/Debug/net8.0/PassIn.Communication.AssemblyInfo.cs
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Communication/obj/Debug/net8.0/PassIn.Communication.csproj.CoreCompileInputs.cache
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Communication/obj/Debug/net8.0/PassIn.Communication.sourcelink.json
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Communication/obj/Debug/net8.0/PassIn.Communication.dll
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Communication/obj/Debug/net8.0/refint/PassIn.Communication.dll
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Communication/obj/Debug/net8.0/PassIn.Communication.pdb
+/home/guilherme/Área de Trabalho/NLW Unite (24⁄04⁄01)/C#/PassIn.Communication/obj/Debug/net8.0/ref/PassIn.Communication.dll
