@@ -1,4 +1,4 @@
-<h1 align="center">Event Manager - Python</h1>
+<h1 align="center">PassIn (Event Manager) - C#</h1>
 
 ## About this Project
 
