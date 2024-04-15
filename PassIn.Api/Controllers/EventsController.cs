@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using PassIn.Application.UseCases.Events.Register;
 using PassIn.Communication.Requests;
 using PassIn.Communication.Responses;
+using PassIn.Exceptions;
 
 namespace PassIn.Api.Controllers;
 
@@ -11,6 +12,9 @@ namespace PassIn.Api.Controllers;
 public class EventsController : ControllerBase
 {
     [HttpPost]
+    // Descriptions of possible Errors. It will appear on Swagger page 
+    [ProducesResponseType(typeof(ResponseRegisteredEventJson), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
     // 'From Body', it's supposed to receive the 'RequestEventJson', and it will be named 'request'
     public IActionResult Register([FromBody] RequestEventJson request)
     {
@@ -22,7 +26,7 @@ public class EventsController : ControllerBase
         
             return Created();
         }
-        catch (ArgumentException ex)
+        catch (PassInException ex)
         {
             return BadRequest(new ResponseErrorJson(ex.Message));
         }
