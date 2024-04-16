@@ -1,4 +1,5 @@
 using PassIn.Communication.Requests;
+using PassIn.Communication.Responses;
 using PassIn.Exceptions;
 using PassIn.Infrastructure;
 
@@ -6,7 +7,7 @@ namespace PassIn.Application.UseCases.Events.Register;
 
 public class RegisterEventUseCase
 {
-    public void Execute(RequestEventJson request)
+    public ResponseRegisteredEventJson Execute(RequestEventJson request)
     {
         Validade(request);
 
@@ -22,6 +23,11 @@ public class RegisterEventUseCase
 
         dbContext.Events.Add(entity);
         dbContext.SaveChanges();
+
+        return new ResponseRegisteredEventJson
+        {
+            Id = entity.Id
+        };
     }
 
     private void Validade(RequestEventJson request)
