@@ -21,6 +21,7 @@ public class RegisterEventUseCase
         };
 
         dbContext.Events.Add(entity);
+        dbContext.SaveChanges();
     }
 
     private void Validade(RequestEventJson request)
