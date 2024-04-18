@@ -17,6 +17,11 @@ This is an API in C#, which simulates an event manager. In this application, the
   - List an attendee's badge information.
   - Create the attendee check-in.
 
+## Used Techs
+
+- Microsoft.EntityFrameworkCore.Sqlite: SQLite database provider for Entity Framework Core;
+- Microsoft.EntityFrameworkCore: A modern object-database mapper for .NET.
+
 # Author
 
 Made with 💜 by Guilherme Bafica 👋
