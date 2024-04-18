@@ -34,17 +34,17 @@ public class RegisterEventUseCase
     {
         if (request.MaximumAttendees <= 0)
         {
-            throw new PassInException("The Maximum Attendees must be a positive value");
+            throw new ErrorOnValidationException("The Maximum Attendees must be a positive value");
         }
         
         if (string.IsNullOrWhiteSpace(request.Title))
         {
-            throw new PassInException("The Title must have a value");
+            throw new ErrorOnValidationException("The Title must have a value");
         }
         
         if (string.IsNullOrWhiteSpace(request.Details))
         {
-            throw new PassInException("The Details must have a value");
+            throw new ErrorOnValidationException("The Details must have a value");
         }
     }
 }
