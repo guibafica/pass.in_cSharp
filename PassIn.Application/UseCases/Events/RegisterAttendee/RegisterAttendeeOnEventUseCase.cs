@@ -58,7 +58,7 @@ public class RegisterAttendeeOnEventUseCase
             .Any(attendee => attendee.Email.Equals(request.Email) && attendee.Event_Id == eventId);
         if (attendeeAlreadyRegistered)
         {
-            throw new ErrorOnValidationException("You cannot register twice on the same event.");
+            throw new ConflictException("You cannot register twice on the same event.");
         }
 
         var attendeeForEvent = _dbContext.Attendees.Count(attendee => attendee.Event_Id == eventId);
