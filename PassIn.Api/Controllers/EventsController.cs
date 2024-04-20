@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using PassIn.Application.UseCases.Events.GetById;
 using PassIn.Application.UseCases.Events.Register;
+using PassIn.Application.UseCases.Events.RegisterAttendee;
 using PassIn.Communication.Requests;
 using PassIn.Communication.Responses;
 using PassIn.Exceptions;
@@ -13,7 +14,7 @@ public class EventsController : ControllerBase
 {
     [HttpPost]
     // Descriptions of possible Errors. It will appear on Swagger page 
-    [ProducesResponseType(typeof(ResponseRegisteredEventJson), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ResponseRegisteredJson), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
     // 'From Body', it's supposed to receive the 'RequestEventJson', and it will be named 'request'
     public IActionResult Register([FromBody] RequestEventJson request)
@@ -40,8 +41,15 @@ public class EventsController : ControllerBase
 
     [HttpPost]
     [Route("{eventId}/register")]
+    [ProducesResponseType(typeof(ResponseEventJson), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status404NotFound)]
     public IActionResult Register([FromRoute] Guid eventId, [FromBody] RequestRegisterEventJson request)
     {
-        return Created();
+        var useCase = new RegisterAttendeeOnEventUseCase();
+        
+        var response = useCase.Execute(eventId, request);
+            
+        return Created(string.Empty, response);
     }
 }
