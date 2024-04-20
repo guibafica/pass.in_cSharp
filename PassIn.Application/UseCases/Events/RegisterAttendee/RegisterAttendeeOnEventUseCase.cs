@@ -40,8 +40,8 @@ public class RegisterAttendeeOnEventUseCase
 
     private void Validate(Guid eventId, RequestRegisterEventJson request)
     {
-        var existEvent = _dbContext.Events.Any(ev => ev.Id == eventId);
-        if (existEvent == false) throw new NotFoundException("An event with this Id don't exists.");
+        var eventEntity = _dbContext.Events.Find(eventId);
+        if (eventEntity is null) throw new NotFoundException("An event with this Id don't exists.");
         
         if (string.IsNullOrWhiteSpace(request.Name))
         {
@@ -59,6 +59,12 @@ public class RegisterAttendeeOnEventUseCase
         if (attendeeAlreadyRegistered)
         {
             throw new ErrorOnValidationException("You cannot register twice on the same event.");
+        }
+
+        var attendeeForEvent = _dbContext.Attendees.Count(attendee => attendee.Event_Id == eventId);
+        if (attendeeForEvent >= eventEntity.Maximum_Attendees)
+        {
+            throw new ErrorOnValidationException("There is no room for this event.");
         }
     }
 
