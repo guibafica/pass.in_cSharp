@@ -21,4 +21,13 @@ public class AttendeesController : Controller
             
         return Created(string.Empty, response);
     }
+
+    [HttpGet]
+    [Route("{eventId}")]
+    [ProducesResponseType(typeof(ResponseAllAttendeesjson), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ResponseErrorJson), StatusCodes.Status404NotFound)]
+    public IActionResult GetAll([FromRoute] Guid eventId)
+    {
+        return Ok();
+    }
 }
