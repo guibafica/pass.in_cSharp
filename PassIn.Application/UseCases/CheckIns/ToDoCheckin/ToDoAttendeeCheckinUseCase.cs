@@ -1,6 +1,7 @@
 using PassIn.Communication.Responses;
 using PassIn.Exceptions;
 using PassIn.Infrastructure;
+using PassIn.Infrastructure.Entities;
 
 namespace PassIn.Application.UseCases.CheckIns.ToDoCheckin;
 
@@ -17,10 +18,19 @@ public class ToDoAttendeeCheckinUseCase
     public ResponseRegisteredJson Execute(Guid attendeeId)
     {
         Validade(attendeeId);
+
+        var entity = new CheckIn
+        {
+            Attendee_Id = attendeeId,
+            Created_at = DateTime.UtcNow,
+        };
+            
+        _dbContext.CheckIns.Add(entity);
+        _dbContext.SaveChanges();
         
         return new ResponseRegisteredJson
         {
-            
+            Id = entity.Id,
         };
     }
 
