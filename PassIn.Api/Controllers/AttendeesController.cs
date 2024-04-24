@@ -6,6 +6,8 @@ using PassIn.Communication.Responses;
 
 namespace PassIn.Api.Controllers;
 
+[Route("api/[controller]")]
+[ApiController]
 public class AttendeesController : Controller
 {
     [HttpPost]
