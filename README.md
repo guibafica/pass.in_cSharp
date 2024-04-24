@@ -1,5 +1,14 @@
 <h1 align="center">PassIn (Event Manager) - C#</h1>
 
+## Project Presentation
+
+<img
+  alt="PassIn"
+  title="PassIn' presentation gif"
+  src="./assets/presentationGif.gif"
+  height="425"
+/>
+
 ## About this Project
 
 This is an API in C#, which simulates an event manager. In this application, the admin will be able to register events, and participants will be able to register, if there is space, and will be able to view their badge, with information about their registration and the event
